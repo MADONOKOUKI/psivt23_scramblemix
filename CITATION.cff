@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below (see preferred-citation)."
+type: software
+title: "ScrambleMix: official PyTorch implementation"
+abstract: >-
+  Official PyTorch implementation of ScrambleMix, a privacy-preserving image processing for
+  edge-cloud machine learning (PSIVT 2023): two copies of an image are scrambled with the two keys
+  of a key pair and mixed with a random ratio; a classifier is trained on several such views with a
+  self-teaching loss and averages predictions over several keys at test time.
+authors:
+  - family-names: Madono
+    given-names: Koki
+    orcid: "https://orcid.org/0000-0002-5214-8539"
+repository-code: "https://github.com/MADONOKOUKI/psivt23_scramblemix"
+url: "https://madonokouki.github.io/projects/scramblemix/"
+license: MIT
+keywords:
+  - privacy-preserving machine learning
+  - image scrambling
+  - learnable image encryption
+  - edge-cloud machine learning
+  - data augmentation
+  - PyTorch
+preferred-citation:
+  type: conference-paper
+  title: "ScrambleMix: A Privacy-Preserving Image Processing for Edge-Cloud Machine Learning"
+  authors:
+    - family-names: Madono
+      given-names: Koki
+      orcid: "https://orcid.org/0000-0002-5214-8539"
+    - family-names: Tanaka
+      given-names: Masayuki
+    - family-names: Onishi
+      given-names: Masaki
+  collection-title: "Image and Video Technology (PSIVT 2023)"
+  collection-type: proceedings
+  conference:
+    name: "11th Pacific-Rim Symposium on Image and Video Technology (PSIVT 2023)"
+    city: Auckland
+    country: NZ
+    date-start: "2023-11-22"
+    date-end: "2023-11-24"
+  publisher:
+    name: "Springer Nature Singapore"
+  notes: "Lecture Notes in Computer Science, vol. 14403"
+  volume: 14403
+  start: 326
+  end: 340
+  year: 2024
+  doi: "10.1007/978-981-97-0376-0_25"
+  url: "https://doi.org/10.1007/978-981-97-0376-0_25"

@@ -1,0 +1,8 @@
+# pip install -r requirements.txt   (or simply: pip install -e .)
+torch>=1.13
+torchvision>=0.14
+numpy
+pillow
+lpips>=0.1.4
+matplotlib
+scikit-image

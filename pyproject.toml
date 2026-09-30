@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scramblemix"
+version = "1.0.0"
+description = "Official PyTorch implementation of ScrambleMix (PSIVT 2023): privacy-preserving image scrambling and mixing for edge-cloud machine learning"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Koki Madono"}]
+keywords = ["privacy-preserving machine learning", "image scrambling", "learnable image encryption",
+            "edge-cloud computing", "data augmentation", "pytorch"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "torch>=1.13",
+    "torchvision>=0.14",
+    "numpy",
+    "pillow",
+    "lpips>=0.1.4",
+    "matplotlib",
+    "scikit-image",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "nbformat", "nbclient", "ipykernel"]
+
+[project.urls]
+Homepage = "https://madonokouki.github.io/projects/scramblemix/"
+Repository = "https://github.com/MADONOKOUKI/psivt23_scramblemix"
+Paper = "https://doi.org/10.1007/978-981-97-0376-0_25"
+Slides = "https://github.com/MADONOKOUKI/psivt23_scramblemix/blob/main/psivt.pdf"
+
+[tool.setuptools]
+packages = ["scramblemix"]
+
+[tool.setuptools.package-data]
+scramblemix = ["resources/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
